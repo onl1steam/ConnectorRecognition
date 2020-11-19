@@ -1,0 +1,24 @@
+PODS:
+  - IBMSwiftSDKCore (1.0.0)
+  - IBMWatsonVisualRecognitionV3 (3.6.0):
+    - IBMSwiftSDKCore (~> 1.0.0)
+  - lottie-ios (3.1.9)
+
+DEPENDENCIES:
+  - IBMWatsonVisualRecognitionV3
+  - lottie-ios
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IBMSwiftSDKCore
+    - IBMWatsonVisualRecognitionV3
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  IBMSwiftSDKCore: 54ad77b03a4d27b218ba514580197db3b89a96ca
+  IBMWatsonVisualRecognitionV3: 01acaf0751f190d4717cb22cad2d8c0c3aaeb99d
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+
+PODFILE CHECKSUM: 197424e00b3f4bc3cf9a9a1216b64809c5898930
+
+COCOAPODS: 1.7.5

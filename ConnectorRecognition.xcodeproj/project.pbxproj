@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FE7FA950D74D57A636B52D9 /* Pods_ConnectorRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952FE53BEA55B59D6CAEF47 /* Pods_ConnectorRecognition.framework */; };
+		920606B82565ABEE00572987 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920606B72565ABEE00572987 /* ArrayExtension.swift */; };
+		920606BD2565AE1400572987 /* RecognitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920606BC2565AE1400572987 /* RecognitionModel.swift */; };
+		920606C12565B02900572987 /* RecognitionInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920606C02565B02900572987 /* RecognitionInfoTableViewCell.swift */; };
+		920606C62565BF0400572987 /* BlankImageViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920606C52565BF0400572987 /* BlankImageViewPlaceholder.swift */; };
+		923C83B92565DCDA002431B7 /* spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = 923C83B82565DCDA002431B7 /* spinner.json */; };
+		924204672565C5AA00A35F44 /* BlankInfoPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924204662565C5AA00A35F44 /* BlankInfoPlaceholder.swift */; };
+		9260DA86256557FE004519E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260DA85256557FE004519E4 /* AppDelegate.swift */; };
+		9260DA88256557FE004519E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260DA87256557FE004519E4 /* SceneDelegate.swift */; };
+		9260DA8F25655801004519E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9260DA8E25655801004519E4 /* Assets.xcassets */; };
+		9260DA9225655801004519E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9260DA9025655801004519E4 /* LaunchScreen.storyboard */; };
+		9260DAA72565681E004519E4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260DAA52565681E004519E4 /* MainViewController.swift */; };
+		9260DAA82565681E004519E4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9260DAA62565681E004519E4 /* MainViewController.xib */; };
+		9260DAAF25656F7B004519E4 /* WatsonRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260DAAE25656F7B004519E4 /* WatsonRecognitionService.swift */; };
+		9260DAB225656FAA004519E4 /* CoreMLRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260DAB125656FAA004519E4 /* CoreMLRecognitionService.swift */; };
+		9260DABD25657016004519E4 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260DABC25657016004519E4 /* ServiceProtocol.swift */; };
+		9260DAC4256573AD004519E4 /* InstantPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260DAC3256573AD004519E4 /* InstantPanGestureRecognizer.swift */; };
+		9260DAC7256573E5004519E4 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260DAC6256573E5004519E4 /* State.swift */; };
+		9260DAD325657720004519E4 /* RecognitionInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260DAD125657720004519E4 /* RecognitionInfoViewController.swift */; };
+		9260DAD425657720004519E4 /* RecognitionInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9260DAD225657720004519E4 /* RecognitionInfoViewController.xib */; };
+		9260DAD92565877B004519E4 /* MyImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9260DAD82565877B004519E4 /* MyImageClassifier.mlmodel */; };
+		9260DADD256587DA004519E4 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260DADC256587DA004519E4 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A186973CBCD790475653428 /* Pods-ConnectorRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectorRecognition.release.xcconfig"; path = "Target Support Files/Pods-ConnectorRecognition/Pods-ConnectorRecognition.release.xcconfig"; sourceTree = "<group>"; };
+		4A7A8EBAA59852DA1B30A5C8 /* Pods-ConnectorRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectorRecognition.debug.xcconfig"; path = "Target Support Files/Pods-ConnectorRecognition/Pods-ConnectorRecognition.debug.xcconfig"; sourceTree = "<group>"; };
+		920606B72565ABEE00572987 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		920606BC2565AE1400572987 /* RecognitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionModel.swift; sourceTree = "<group>"; };
+		920606C02565B02900572987 /* RecognitionInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionInfoTableViewCell.swift; sourceTree = "<group>"; };
+		920606C52565BF0400572987 /* BlankImageViewPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankImageViewPlaceholder.swift; sourceTree = "<group>"; };
+		923C83B82565DCDA002431B7 /* spinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinner.json; sourceTree = "<group>"; };
+		924204662565C5AA00A35F44 /* BlankInfoPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankInfoPlaceholder.swift; sourceTree = "<group>"; };
+		9260DA82256557FE004519E4 /* ConnectorRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectorRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9260DA85256557FE004519E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9260DA87256557FE004519E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9260DA8E25655801004519E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9260DA9125655801004519E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9260DA9325655801004519E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9260DAA52565681E004519E4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9260DAA62565681E004519E4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		9260DAAE25656F7B004519E4 /* WatsonRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonRecognitionService.swift; sourceTree = "<group>"; };
+		9260DAB125656FAA004519E4 /* CoreMLRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLRecognitionService.swift; sourceTree = "<group>"; };
+		9260DABC25657016004519E4 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		9260DAC3256573AD004519E4 /* InstantPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		9260DAC6256573E5004519E4 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		9260DAD125657720004519E4 /* RecognitionInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionInfoViewController.swift; sourceTree = "<group>"; };
+		9260DAD225657720004519E4 /* RecognitionInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecognitionInfoViewController.xib; sourceTree = "<group>"; };
+		9260DAD82565877B004519E4 /* MyImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyImageClassifier.mlmodel; sourceTree = "<group>"; };
+		9260DADC256587DA004519E4 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		F952FE53BEA55B59D6CAEF47 /* Pods_ConnectorRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectorRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9260DA7F256557FE004519E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE7FA950D74D57A636B52D9 /* Pods_ConnectorRecognition.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		456C997CAF79F350BEF7BD3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A7A8EBAA59852DA1B30A5C8 /* Pods-ConnectorRecognition.debug.xcconfig */,
+				4A186973CBCD790475653428 /* Pods-ConnectorRecognition.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		920606BB2565AE0B00572987 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				920606BC2565AE1400572987 /* RecognitionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		920606BF2565B00B00572987 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				920606C02565B02900572987 /* RecognitionInfoTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		920606C42565BEE600572987 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				920606C52565BF0400572987 /* BlankImageViewPlaceholder.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		923810A12566823B007DB3FA /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9260DACA256576C3004519E4 /* RecongitionInfoViewController */,
+				9260DAAB25656876004519E4 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		924204652565C58A00A35F44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				924204662565C5AA00A35F44 /* BlankInfoPlaceholder.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9260DA79256557FE004519E4 = {
+			isa = PBXGroup;
+			children = (
+				9260DA84256557FE004519E4 /* ConnectorRecognition */,
+				9260DA83256557FE004519E4 /* Products */,
+				456C997CAF79F350BEF7BD3B /* Pods */,
+				ECE6238E34F49F7D6E8C44FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9260DA83256557FE004519E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9260DA82256557FE004519E4 /* ConnectorRecognition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9260DA84256557FE004519E4 /* ConnectorRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				9260DAAD25656F68004519E4 /* Services */,
+				923810A12566823B007DB3FA /* Presentation */,
+				9260DADB256587BA004519E4 /* Extensions */,
+				9260DAD725658763004519E4 /* MLModel */,
+				9260DAC225657394004519E4 /* Animation Helpers */,
+				9260DA9D25655B9B004519E4 /* Helpers */,
+				9260DA8E25655801004519E4 /* Assets.xcassets */,
+				9260DA9025655801004519E4 /* LaunchScreen.storyboard */,
+			);
+			path = ConnectorRecognition;
+			sourceTree = "<group>";
+		};
+		9260DA9D25655B9B004519E4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				923C83B82565DCDA002431B7 /* spinner.json */,
+				9260DA9325655801004519E4 /* Info.plist */,
+				9260DA87256557FE004519E4 /* SceneDelegate.swift */,
+				9260DA85256557FE004519E4 /* AppDelegate.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9260DAAB25656876004519E4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				920606C42565BEE600572987 /* Views */,
+				9260DAA52565681E004519E4 /* MainViewController.swift */,
+				9260DAA62565681E004519E4 /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9260DAAD25656F68004519E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				920606BB2565AE0B00572987 /* Model */,
+				9260DAAE25656F7B004519E4 /* WatsonRecognitionService.swift */,
+				9260DAB125656FAA004519E4 /* CoreMLRecognitionService.swift */,
+				9260DABC25657016004519E4 /* ServiceProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9260DAC225657394004519E4 /* Animation Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9260DAC3256573AD004519E4 /* InstantPanGestureRecognizer.swift */,
+				9260DAC6256573E5004519E4 /* State.swift */,
+			);
+			path = "Animation Helpers";
+			sourceTree = "<group>";
+		};
+		9260DACA256576C3004519E4 /* RecongitionInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				920606BF2565B00B00572987 /* Cell */,
+				924204652565C58A00A35F44 /* Views */,
+				9260DAD125657720004519E4 /* RecognitionInfoViewController.swift */,
+				9260DAD225657720004519E4 /* RecognitionInfoViewController.xib */,
+			);
+			path = RecongitionInfoViewController;
+			sourceTree = "<group>";
+		};
+		9260DAD725658763004519E4 /* MLModel */ = {
+			isa = PBXGroup;
+			children = (
+				9260DAD82565877B004519E4 /* MyImageClassifier.mlmodel */,
+			);
+			path = MLModel;
+			sourceTree = "<group>";
+		};
+		9260DADB256587BA004519E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9260DADC256587DA004519E4 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				920606B72565ABEE00572987 /* ArrayExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ECE6238E34F49F7D6E8C44FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F952FE53BEA55B59D6CAEF47 /* Pods_ConnectorRecognition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9260DA81256557FE004519E4 /* ConnectorRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9260DA9625655801004519E4 /* Build configuration list for PBXNativeTarget "ConnectorRecognition" */;
+			buildPhases = (
+				FE1975F3999F0AEE32E004D9 /* [CP] Check Pods Manifest.lock */,
+				9260DA7E256557FE004519E4 /* Sources */,
+				9260DA7F256557FE004519E4 /* Frameworks */,
+				9260DA80256557FE004519E4 /* Resources */,
+				6C2972FA48EAC44C9F15201E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConnectorRecognition;
+			productName = ConnectorRecognition;
+			productReference = 9260DA82256557FE004519E4 /* ConnectorRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9260DA7A256557FE004519E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					9260DA81256557FE004519E4 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 9260DA7D256557FE004519E4 /* Build configuration list for PBXProject "ConnectorRecognition" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9260DA79256557FE004519E4;
+			productRefGroup = 9260DA83256557FE004519E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9260DA81256557FE004519E4 /* ConnectorRecognition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9260DA80256557FE004519E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9260DA9225655801004519E4 /* LaunchScreen.storyboard in Resources */,
+				9260DAA82565681E004519E4 /* MainViewController.xib in Resources */,
+				923C83B92565DCDA002431B7 /* spinner.json in Resources */,
+				9260DAD425657720004519E4 /* RecognitionInfoViewController.xib in Resources */,
+				9260DA8F25655801004519E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C2972FA48EAC44C9F15201E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectorRecognition/Pods-ConnectorRecognition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectorRecognition/Pods-ConnectorRecognition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConnectorRecognition/Pods-ConnectorRecognition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE1975F3999F0AEE32E004D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConnectorRecognition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9260DA7E256557FE004519E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9260DA86256557FE004519E4 /* AppDelegate.swift in Sources */,
+				9260DAC7256573E5004519E4 /* State.swift in Sources */,
+				9260DABD25657016004519E4 /* ServiceProtocol.swift in Sources */,
+				920606B82565ABEE00572987 /* ArrayExtension.swift in Sources */,
+				920606C62565BF0400572987 /* BlankImageViewPlaceholder.swift in Sources */,
+				9260DAB225656FAA004519E4 /* CoreMLRecognitionService.swift in Sources */,
+				920606C12565B02900572987 /* RecognitionInfoTableViewCell.swift in Sources */,
+				9260DA88256557FE004519E4 /* SceneDelegate.swift in Sources */,
+				9260DAD92565877B004519E4 /* MyImageClassifier.mlmodel in Sources */,
+				9260DAD325657720004519E4 /* RecognitionInfoViewController.swift in Sources */,
+				924204672565C5AA00A35F44 /* BlankInfoPlaceholder.swift in Sources */,
+				9260DAA72565681E004519E4 /* MainViewController.swift in Sources */,
+				9260DAAF25656F7B004519E4 /* WatsonRecognitionService.swift in Sources */,
+				9260DADD256587DA004519E4 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				9260DAC4256573AD004519E4 /* InstantPanGestureRecognizer.swift in Sources */,
+				920606BD2565AE1400572987 /* RecognitionModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9260DA9025655801004519E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9260DA9125655801004519E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9260DA9425655801004519E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9260DA9525655801004519E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9260DA9725655801004519E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A7A8EBAA59852DA1B30A5C8 /* Pods-ConnectorRecognition.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UHA847YA4;
+				INFOPLIST_FILE = ConnectorRecognition/Helpers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onl1steam.ConnectorRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9260DA9825655801004519E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A186973CBCD790475653428 /* Pods-ConnectorRecognition.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UHA847YA4;
+				INFOPLIST_FILE = ConnectorRecognition/Helpers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onl1steam.ConnectorRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9260DA7D256557FE004519E4 /* Build configuration list for PBXProject "ConnectorRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9260DA9425655801004519E4 /* Debug */,
+				9260DA9525655801004519E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9260DA9625655801004519E4 /* Build configuration list for PBXNativeTarget "ConnectorRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9260DA9725655801004519E4 /* Debug */,
+				9260DA9825655801004519E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9260DA7A256557FE004519E4 /* Project object */;
+}
